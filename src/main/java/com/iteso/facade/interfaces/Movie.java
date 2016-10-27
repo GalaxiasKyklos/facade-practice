@@ -6,5 +6,6 @@ package com.iteso.facade.interfaces;
 public interface Movie {
     void play();
     void pause();
+    void resume();
     String getName();
 }

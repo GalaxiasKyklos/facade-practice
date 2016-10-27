@@ -19,4 +19,7 @@ public class DVDMovie implements Movie {
     public String getName() {
         return this.name;
     }
+    public void resume() {
+        System.out.println("The movie " + name + " is resumming");
+    }
 }
