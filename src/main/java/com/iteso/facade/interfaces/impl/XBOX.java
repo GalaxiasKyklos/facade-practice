@@ -1,6 +1,7 @@
 package com.iteso.facade.interfaces.impl;
 
 import com.iteso.facade.interfaces.GameConsole;
+import com.iteso.facade.interfaces.Movie;
 import com.iteso.facade.interfaces.VideoGame;
 
 /**
@@ -11,6 +12,10 @@ import com.iteso.facade.interfaces.VideoGame;
  * To change this template use File | Settings | File Templates.
  */
 public class XBOX implements GameConsole {
+
+    public void insertMovie(Movie movie){
+        System.out.println(movie.getName() + " has been inserted into XBOX 360");
+    }
 
     public void on() {
         System.out.println("XBOX 360 is ON");
@@ -23,6 +28,6 @@ public class XBOX implements GameConsole {
 
 
     public void insertGame(VideoGame videoGame) {
-        System.out.println(videoGame.getName() + " has been inserted into Play Station 3");
+        System.out.println(videoGame.getName() + " has been inserted into XBOX 360");
     }
 }
